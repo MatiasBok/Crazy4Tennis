@@ -1,0 +1,11 @@
+Lista de cosas para cambiar de SEO en su proyecto:
+- completar el alt en todas las img
+- cambiarle el nombre de todas las img que estén usando a nombres que tengan que ver con la img y no nombres random “img1”, “img2", “productoUno” todo eso no sería correcto.
+- Agregar meta keywords en todos los html
+- Agregar meta description en todos los html
+correcta apertura y cierre de todas las etiquetas + correcta tabulación
+- optimizar todas las img, por ejemplo si voy a mostrar 3 productos uno a lado del otro y la img de cada producto es de 1920*1080 se podría bajar la dimensión a la mitad por lo menos ya que esa dimensión (1920) serviría si quisiéramos utlizar el producto en todo el ancho de la pantalla.
+- cambiar sus tittle por un titulo específico en cada html
+- cambiar textos lorem y poner texto con buen ortografía SUPER IMPORTANTE
+- tendría que haber solo un h1 por html
+- nada de <br> ;)

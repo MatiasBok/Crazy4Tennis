@@ -1,0 +1,71 @@
+/*---------------------------------------------------
+                        MENU
+-----------------------------------------------------*/
+.navegacion {
+    background-color:chocolate;
+    } 
+    
+    .menuNav {
+        width:100%;
+        justify-content:space-between;
+    }
+    
+    .menuNav .itemsIzquierda{
+        display:flex;
+    }
+    
+    .navegacion .menuNav .nav-link { 
+        color:white;
+        font-family: 'Julius Sans One', sans-serif;
+        font-weight: bold;
+    }
+    
+    .contacto{
+        text-decoration: none;
+    
+    }
+        
+    /*----------------------------------------------------
+                           SUBMENU
+    -----------------------------------------------------*/
+    .menuNav .itemsIzquierda .submenu{
+        background-color: indigo;
+    }
+    
+    .menuNav .itemsIzquierda .submenu li a{
+        color: white;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s ease-in-out;
+    } 
+    
+    .menuNav .itemsIzquierda .submenu li a:hover{
+        color: white;
+        background-color: transparent;
+        border-bottom:2px solid white;
+    }
+    
+    /*----------------------------------------------------
+                        MENU HAMBURGUESA
+    -----------------------------------------------------*/
+    .navbar-toggler { /*Esto modifica al botón*/
+        border:none;
+        margin:0px;
+        padding:0px;
+    }
+    
+    .navbar-toggler:focus { 
+        box-shadow: none;
+    }
+    
+    .navbar-toggler { /*Esto modifica al botón*/
+        width: 50px;
+        height:50px;
+        padding: 0px;
+    }
+    
+    .icono img {
+        width: 50px;
+        height: 50px;
+        /* border: 3px dotted white; */
+        padding: 5px;
+    }

@@ -1,0 +1,275 @@
+/*
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+*/
+
+
+/*-----------------------------------------------------
+                  MEDIA SCREEN 768px
+-----------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    #cuerpo-main {
+        display: block;}
+/*------------------------
+            MENU
+------------------------*/
+
+    .menuNav .itemsIzquierda {
+        flex-direction: column;}
+
+/*------------------------
+          TITULO
+------------------------*/
+
+    header h1 {
+        font-size: 3rem;}
+
+    header .titulo{
+        font-size: 2rem;}
+        
+        #contenedorMain img {
+            width: 250px;
+            margin: 10px 0px;}
+    
+        #cuerpo-main {
+            display: block;}
+    
+        .contenedorInfo h2 {
+            font-size: 2.5rem;}
+        
+        .contenedor{
+            flex-direction: column;}
+        .seccion1:first-child {
+            order: 2;}
+        
+        .seccion2:nth-child(2) {
+            order: 1;}
+    
+        .contenedorPileta{
+            margin:10px;}
+    
+        .contenedorInfo article p{
+            margin-top:5px;}
+    
+/*----------------------------
+ FOTO CANCHA CUBIERTA MAIN BODY
+------------------------------*/
+    
+    #canchasCub{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        height:281px;
+        width:350px;
+        margin:25px 10px 15px 20px;}
+    
+    #canchasCub img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        width:350px;}
+    
+    #canchasCub p {
+          text-align:center;
+          color:white;
+          font-family: 'Julius Sans One', sans-serif;
+          font-weight: bold;
+          color:red;
+          font-size:2rem;}
+    
+    #canchasCub img.top:hover {
+        opacity:0.4;}
+      
+/*---------------------------------
+FOTO CANCHAS DE POLVO DEL MAIN BODY
+----------------------------------*/
+    
+    #canchasPolvo{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        height:260px;
+        width:360px;
+        margin:15px 60px 5px 70px;}
+    
+    #canchasPolvo img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        height:280px;
+        width:100%;}
+    
+    #canchasPolvo p {
+          text-align:center;
+          color:white;
+          font-family: 'Julius Sans One', sans-serif;
+          font-weight: bold;
+          color:red;
+          font-size:2rem;}
+    
+    #canchasPolvo img.top:hover {
+        opacity:0.4;}
+   
+/*--------------------------------
+FOTO IMAGEN PROFESOR DEL MAIN BODY
+---------------------------------*/
+    
+    #profesoresExp{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        height:290px;
+        width:350px;
+        margin:5px 40px 0px 90px;}
+    
+    #profesoresExp img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        width: 100%;}
+    
+    #profesoresExp p {
+          text-align:center;
+          color:white;
+          font-family: 'Julius Sans One', sans-serif;
+          font-weight: bold;
+          color:red;
+          font-size:2rem;}
+    
+    #profesoresExp img.top:hover {
+        opacity:0.4;}
+    
+/*---------------------------
+FOTO ESCUELITA DEL MAIN BODY
+----------------------------*/
+    
+    #escuelaTenis{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        height:281px;
+        width:350px;
+        margin:40px 10px 10px 90px;}
+    
+    #escuelaTenis img {
+        position:absolute;
+        height:300px;
+        width: 350px;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;}
+    
+    #escuelaTenis p {
+          text-align:center;
+          color:white;
+          font-family: 'Julius Sans One', sans-serif;
+          font-weight: bold;
+          color:red;
+          font-size:2rem;}
+    
+    #escuelaTenis img.top:hover {
+        opacity:0.4;}
+    
+/*---------------------------
+        NUESTROS PROFES
+---------------------------*/
+
+.mainQuerie{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+
+    .titulos-profes{
+        margin-right:20px;
+        margin-left:0px;
+        margin-top:10px;
+        
+            h5{
+              font-size: 2.5rem;}
+
+            h4{
+              font-size: 1.3rem;}
+    
+            .profesQuerie{
+              width:90%;
+              font-weight: 600;
+              font-size: 1.3rem;
+              margin-bottom:0px;
+              padding-right:10px;
+              text-align:center;}
+        }
+        .containerQuerie{
+            margin-left:5px;}
+
+     .card-deck{  
+        display:flex;
+        justify-content:space-around;
+        align-items:flex-start;
+        margin-right: 10px;
+        margin-left:5px;}
+ 
+     .card{ 
+         width: 12rem;
+         min-height:200px;
+         margin-bottom: 50px;
+                
+         .card-img-top{
+             width:80%;} 
+ 
+         .card-body{
+             padding: 5px;
+ 
+            p{
+             font-size:0.8rem;}
+            h2{
+             font-size: 1.5rem;
+             color:yellow;}
+         
+            h6{
+             color:white;
+             font-weight: 600;
+             font-size: 1rem;
+             text-decoration: underline;}
+       }
+      }
+    }
+  
+/*---------------------------
+            FOOTER
+----------------------------*/
+    footer {
+        flex-direction: column;
+        padding: 30px 0px;
+    
+        section .footer {
+          width: 600px;
+          display: flex;
+          justify-content:center;
+          align-items:center;}
+    }
+
+}

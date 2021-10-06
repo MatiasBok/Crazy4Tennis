@@ -1,0 +1,163 @@
+/*-------------------------------------
+            MAX-WIDTH 992px
+-------------------------------------*/
+
+@media screen and (max-width: 992px) {
+    .contenedorInfo article p{
+        margin-top:5px;} 
+
+    footer {
+        margin-top: 5px;}
+
+  
+/*----------------------------------
+FOTO CANCHAS DE POLVO DEL MAIN BODY
+----------------------------------*/
+
+#canchasPolvo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    height:280px;
+    width:280px;
+    margin:50px 10px 0px 25px;
+}
+
+#canchasPolvo img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    height:280px;
+    width:100%; 
+  }
+
+#canchasPolvo p {
+      text-align:center;
+      color:white;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: bold;
+      color:red;
+      font-size:2rem;
+}
+
+#canchasPolvo img.top:hover {
+    opacity:0.4;
+  }
+
+/*----------------------------
+FOTO CANCHA CUBIERTA MAIN BODY
+-----------------------------*/
+
+#canchasCub{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    height:280px;
+    width:280px;
+    margin:50px 10px 20px 5px;
+}
+
+#canchasCub img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    width:310px;
+  }
+
+#canchasCub p {
+      text-align:center;
+      color:white;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: bold;
+      color:red;
+      font-size:2rem;
+}
+
+#canchasCub img.top:hover {
+    opacity:0.4;
+  }
+  
+/*--------------------------------
+FOTO IMAGEN PROFESOR DEL MAIN BODY
+---------------------------------*/
+
+#profesoresExp{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    height:281px;
+    width:280px;
+    margin:10px 20px 5px 25px;
+}
+
+#profesoresExp img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    width: 290px;
+    height: 250px;
+  }
+
+#profesoresExp p {
+      text-align:center;
+      color:white;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: bold;
+      color:red;
+      font-size:1.5rem;
+}
+
+#profesoresExp img.top:hover {
+    opacity:0.4;
+  }
+
+/*--------------------------
+FOTO ESCUELITA DEL MAIN BODY
+----------------------------*/
+
+#escuelaTenis{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    height:250px;
+    width:250px;
+    margin:20px 20px 5px 40px;
+}
+
+#escuelaTenis img {
+    position:absolute;
+    height:250px;
+    width: 300px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+#escuelaTenis p {
+      text-align:center;
+      color:white;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: bold;
+      color:red;
+      font-size:2rem;
+}
+
+#escuelaTenis img.top:hover {
+    opacity:0.4;
+  }
+
+}
