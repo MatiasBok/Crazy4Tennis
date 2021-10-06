@@ -218,12 +218,12 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
                      margin-bottom:0px;
                      padding-left:10px;}
         }
-    .row{
-            margin-left:120px;
-             
-             
-            
-             
+      
+        .col-sm-12{
+            display:flex;
+            justify-content: center;
+        }
+
         .card{ 
              size: 100%;
              min-height:200px;
@@ -252,4 +252,3 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     }
 }
   
-}

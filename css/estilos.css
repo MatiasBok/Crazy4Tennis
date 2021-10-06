@@ -992,29 +992,34 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     margin-bottom: 0px;
     padding-left: 10px;
   }
-  .mainQuerie .row {
-    margin-left: 120px;
+  .mainQuerie .col-sm-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .mainQuerie .row .card {
+  .mainQuerie .card {
     size: 100%;
     min-height: 200px;
     margin-bottom: 50px;
     width: 15rem;
   }
-  .mainQuerie .row .card .card-img-top {
+  .mainQuerie .card .card-img-top {
     width: 60%;
   }
-  .mainQuerie .row .card .card-body {
+  .mainQuerie .card .card-body {
     padding: 20px;
   }
-  .mainQuerie .row .card p {
+  .mainQuerie .card p {
     font-size: 0.8rem;
   }
-  .mainQuerie .row .card h2 {
+  .mainQuerie .card h2 {
     font-size: 1.5rem;
     color: yellow;
   }
-  .mainQuerie .row .card h6 {
+  .mainQuerie .card h6 {
     color: white;
     font-weight: 600;
     font-size: 1rem;
@@ -1322,7 +1327,7 @@ FOTO ESCUELITA DEL MAIN BODY
     padding: 30px 0px;
   }
   footer section .footer {
-    width: 600px;
+    width: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1332,6 +1337,9 @@ FOTO ESCUELITA DEL MAIN BODY
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  footer .redes {
+    width: 600px;
   }
 }
 
