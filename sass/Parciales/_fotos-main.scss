@@ -14,8 +14,7 @@
 
 #canchasPolvo img {    
     @include transitions;
-    height:280px;
-    width:100%; 
+    width:110%; 
   }
 
 #canchasPolvo p {
@@ -47,7 +46,7 @@
 
 #canchasCub img {
     @include transitions;
-    width:350px;
+    width:100%;
   }
 
 #canchasCub p {

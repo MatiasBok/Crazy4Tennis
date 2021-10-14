@@ -25,6 +25,9 @@ ICONOS CONTACTO
 /*----------------------------
            FOOTER
 ----------------------------*/
+/*----------------------------
+         NOSOTROS
+----------------------------*/
 /*----------------------------------------------------
                   TITULO PRINCIPAL 
 -----------------------------------------------------*/
@@ -201,8 +204,7 @@ body {
   left: 0;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  height: 280px;
-  width: 100%;
+  width: 110%;
 }
 
 #canchasPolvo p {
@@ -242,7 +244,7 @@ body {
   left: 0;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  width: 350px;
+  width: 100%;
 }
 
 #canchasCub p {
@@ -474,31 +476,145 @@ main h4 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: white;
 }
 
-.main-nosotros section h2 {
+.main-nosotros h5 {
+  font-size: 3rem;
+  color: #f16210;
+  background-color: #b6c7ac;
+  width: 100%;
+  padding: 10px;
   text-align: center;
-  font-size: 2rem;
-  color: rgba(230, 180, 17, 0.89);
-}
-
-.main-nosotros h3 {
-  font-size: 1.5rem;
-  color: #c9ab25;
-  text-decoration: underline;
 }
 
 .main-nosotros p {
-  color: white;
+  color: black;
 }
 
 .main-nosotros li {
-  color: white;
+  color: black;
 }
 
-.fondo {
-  background: url(../ASSETS/780473.jpg) no-repeat center center fixed;
-  background-size: cover;
+.card {
+  border: none;
+}
+
+.card .card-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: sandybrown;
+}
+
+.card-VMV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 50px;
+  margin-top: 200px;
+}
+
+.card-VMV .VMV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-VMV .img-fluid {
+  width: 100%;
+}
+
+.card-mision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+
+.card-mision .mision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-mision .img-fluid {
+  width: 60%;
+  margin-left: 50px;
+}
+
+.card-valores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.card-valores .valores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-valores .img-fluid {
+  width: 100%;
+}
+
+.card-vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.card-vision .vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-vision .img-fluid {
+  width: 150%;
+  margin-left: 20px;
 }
 
 /*----------------------------------------------------
@@ -520,10 +636,26 @@ main h4 {
           align-items: center;
 }
 
+/*------------------------------
+            fieldset
+------------------------------*/
 .escribinos {
-  width: 50%;
+  width: 40%;
   padding: 15px;
-  margin: 30px 80px;
+  margin: 50px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .como-contactar {
@@ -588,6 +720,7 @@ main h4 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 .Whatsapp {
@@ -687,7 +820,6 @@ footer {
           justify-content: space-evenly;
   width: 100%;
   height: 200;
-  margin-top: 20px;
 }
 
 .footer {
@@ -695,7 +827,7 @@ footer {
   font-weight: 1000;
   color: wheat;
   width: 600px;
-  margin: 15px;
+  margin: 20px;
 }
 
 footer .redes {

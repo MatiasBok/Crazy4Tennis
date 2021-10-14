@@ -2,32 +2,89 @@
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
-}
+    background-color: white;
 
-.main-nosotros section h2{
-    text-align:center;
-    font-size: 2rem;
-    color:rgba(230, 180, 17, 0.89);
-}
-
-.main-nosotros h3{
-    font-size: 1.5rem;
-    color:rgb(201, 171, 37);
-    text-decoration: underline;
+    h5{
+        font-size: 3rem;
+        color:rgb(241, 98, 16);
+        background-color: rgb(182, 199, 172);
+        width:100%;
+        padding:10px;
+        text-align:center;}
 }
 
 .main-nosotros p{
-    color:white;
+    color:black;
 }
 
 .main-nosotros li{
-    color:white;
+    color:black;
 }
 
-.fondo{
-    background: url(../ASSETS/780473.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-    background-size: cover;
+.card{
+    border: none;
+
+    .card-title{
+        text-align:center;
+        font-size: 2.5rem;
+        color:sandybrown;}
 }
+
+.card-VMV{
+    display:flex;
+    flex-direction: row-reverse;
+    margin-bottom:50px;
+    margin-top: 200px;
+
+    .VMV{
+        @include card-space;}
+
+    .img-fluid{
+        width:100%;
+    }
+}
+
+.card-mision{
+    display:flex;
+    flex-direction: row-reverse;
+    margin-bottom:50px;
+
+    .mision{
+        @include card-space;}
+        
+        .img-fluid{
+            width:60%;
+            margin-left:50px;
+        }
+}
+
+.card-valores{
+    display: flex;
+    margin-bottom:50px;
+
+    .valores{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;}
+
+    .img-fluid{
+        width:100%;}
+
+}
+
+.card-vision{
+    display:flex;
+    margin-bottom:50px;
+
+    .vision{
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;}
+
+    .img-fluid{
+        width:150%;
+        margin-left:20px;}
+    }
+
+
+

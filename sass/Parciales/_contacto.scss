@@ -1,11 +1,19 @@
 #contactanos{
     @include flex-reverse;
 }
+/*------------------------------
+            fieldset
+------------------------------*/
 
 .escribinos{
-    width:50%;
+    width:40%;
     padding:15px;
-    margin:30px 80px;
+    margin:50px 70px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:flex-start;
+
 }
 
 .como-contactar{
@@ -48,7 +56,8 @@
 .iconos-contacto{
     width:100%;
     display:flex;
-    justify-content:space-evenly;}
+    justify-content:space-evenly;
+    margin-top:10px;}
 
 .Whatsapp{
     width:20%;}
