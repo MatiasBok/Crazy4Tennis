@@ -151,14 +151,15 @@ body {
 }
 
 #contenedorMain {
-  margin: 60px 0px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 #contenedorMain img {
   border-radius: 40px;
 }
 
-.contenedorInfo h2 {
+.contenedorInfo h3 {
   font-family: 'Julius Sans One', sans-serif;
   color: red;
   font-weight: 500;
@@ -166,15 +167,16 @@ body {
   font-size: 3rem;
 }
 
-.contenedorInfo article p {
+.contenedorInfo, .contenedorInfo2 article p {
   margin-top: 35px;
   margin-bottom: 0px;
 }
 
 .contenedorInfo article p,
-.contenedorPileta p {
+.contenedorInfo2 p {
   font-family: 'Julius Sans One', sans-serif;
   text-align: center;
+  font-weight: 900;
 }
 
 /*----------------------------------------------------
@@ -194,9 +196,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  height: 281px;
+  height: 300px;
   width: 380px;
-  margin: 100px 20px 0px 25px;
+  margin: 100px 0px 0px 25px;
 }
 
 #canchasPolvo img {
@@ -204,12 +206,11 @@ body {
   left: 0;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  width: 110%;
+  width: 100%;
 }
 
 #canchasPolvo p {
   text-align: center;
-  color: white;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
   color: red;
@@ -249,7 +250,6 @@ body {
 
 #canchasCub p {
   text-align: center;
-  color: white;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
   color: red;
@@ -289,7 +289,6 @@ body {
 
 #profesoresExp p {
   text-align: center;
-  color: white;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
   color: red;
@@ -329,7 +328,6 @@ body {
 
 #escuelaTenis p {
   text-align: center;
-  color: white;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
   color: red;
@@ -375,7 +373,7 @@ body {
   margin-bottom: 50px;
 }
 
-main h5 {
+main h3 {
   color: orangered;
   font-size: 3rem;
   font-family: 'Lacquer', cursive;
@@ -434,7 +432,7 @@ main h4 {
           align-items: center;
 }
 
-.row .card .card-body h2 {
+.row .card .card-body h5 {
   font-size: 2.5rem;
   color: yellow;
 }
@@ -620,7 +618,7 @@ main h4 {
 /*----------------------------------------------------
                      CONTACTO
 -----------------------------------------------------*/
-#contactanos {
+#main-contactanos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +656,28 @@ main h4 {
           align-items: flex-start;
 }
 
+/*------------------------------
+        CÓMO CONTACTAR
+------------------------------*/
+#contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  height: 90vh;
+  margin: 80px 50px 10px 50px;
+}
+
 .como-contactar {
   font-family: 'Lacquer', cursive;
   display: -webkit-box;
@@ -677,7 +697,7 @@ main h4 {
 }
 
 .como-contactar h4 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 1000;
   color: crimson;
   text-align: center;
@@ -688,25 +708,6 @@ main h4 {
   font-weight: 700;
   text-align: center;
   padding: 30px;
-}
-
-#contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 75%;
-  height: 90vh;
-  margin: 80px 50px 10px 50px;
 }
 
 /*----------------------------------------------------
@@ -822,7 +823,7 @@ footer {
   height: 200;
 }
 
-.footer {
+footer .texto-footer {
   font-size: 16px;
   font-weight: 1000;
   color: wheat;
@@ -843,28 +844,28 @@ footer .redes img {
   width: 5%;
 }
 
-.Facebook:hover {
+footer .Facebook:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
-.Instagram:hover {
+footer .Instagram:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
-.Twitter:hover {
+footer .Twitter:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
-.Youtube:hover {
+footer .Youtube:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-transition: 1.5s;
@@ -874,22 +875,38 @@ footer .redes img {
 /*---------------------------------------------------------
                        MEDIA QUERIES
 ---------------------------------------------------------*/
-/*-----------------------------------------------------
-                MEDIA SCREEN 576px
------------------------------------------------------*/
+/*---------------------------------------------------------
+                    MEDIA SCREEN 576px
+----------------------------------------------------------*/
 @media screen and (max-width: 576px) {
-  /*--------------------
-         TITULO
- --------------------*/
+  /*-----------------------------------------
+                    MAIN
+ -----------------------------------------*/
+  /*-----------------------
+          TITULO 
+ ------------------------*/
   header h1 {
-    font-size: 3rem;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+    color: rgba(255, 251, 0, 0.87);
+    background: -webkit-gradient(linear, left bottom, left top, from(#040308), color-stop(#AD4A28), color-stop(#DD723C), color-stop(#FC7001), color-stop(#DCB697), color-stop(#9BA5AE), color-stop(#3E5879), to(#020B1A));
+    background: linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001, #DCB697, #9BA5AE, #3E5879, #020B1A);
+    margin: 0px;
   }
-  header .titulo {
-    font-size: 1.5rem;
+  /*------------------------
+   TITULO EN OTRAS PAG
+-------------------------*/
+  h2.titulo {
+    font-size: 2rem;
   }
+  /*------------------------
+           BODY
+-------------------------*/
   #contenedorMain img {
     width: 250px;
-    margin: 10px 0px;
   }
   #cuerpo-main {
     display: block;
@@ -900,46 +917,8 @@ footer .redes img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contenedorInfo h2 {
+  .contenedorInfo h3 {
     font-size: 2.5rem;
-  }
-  footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 30px 0px;
-  }
-  .footer {
-    width: 300px;
-  }
-  .contenedor {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .seccion1:first-child {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .seccion2:nth-child(2) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .contenedorPileta {
-    margin: 10px;
-  }
-  .contenedorInfo article p {
-    margin-top: 5px;
-  }
-  /*----------------------------
-              MENU
-------------------------------*/
-  .navegacion {
-    padding-left: 10px;
   }
   /*----------------------------
 FOTO CANCHA CUBIERTA MAIN BODY
@@ -960,22 +939,18 @@ FOTO CANCHA CUBIERTA MAIN BODY
     margin: 25px 10px 15px 20px;
   }
   #canchasCub img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    width: 350px;
+    width: 4000px;
   }
   #canchasCub p {
     text-align: center;
     color: white;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
-    color: red;
+    color: yellow;
     font-size: 2rem;
   }
   #canchasCub img.top:hover {
-    opacity: 0.4;
+    opacity: 0;
   }
   /*---------------------------------
 FOTO CANCHAS DE POLVO DEL MAIN BODY
@@ -996,11 +971,6 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
     margin: 15px 60px 5px 70px;
   }
   #canchasPolvo img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    height: 280px;
     width: 100%;
   }
   #canchasPolvo p {
@@ -1033,10 +1003,6 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     margin: 5px 40px 0px 90px;
   }
   #profesoresExp img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
     width: 100%;
   }
   #profesoresExp p {
@@ -1051,7 +1017,7 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     opacity: 0.4;
   }
   /*---------------------------
- FOTO ESCUELITA DEL MAIN BODY
+FOTO ESCUELITA DEL MAIN BODY
 ----------------------------*/
   #escuelaTenis {
     display: -webkit-box;
@@ -1069,11 +1035,8 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     margin: 40px 10px 10px 90px;
   }
   #escuelaTenis img {
-    position: absolute;
     height: 300px;
     width: 350px;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
   }
   #escuelaTenis p {
     text-align: center;
@@ -1085,6 +1048,182 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
   }
   #escuelaTenis img.top:hover {
     opacity: 0.4;
+  }
+  /*-----------------------
+      ORDEN OBJETOS
+------------------------*/
+  .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .seccion1:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .seccion2:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .contenedorPileta {
+    margin: 10px;
+  }
+  /*----------------------------------------
+                NOSOTROS
+------------------------------------------*/
+  .main-nosotros h5 {
+    font-size: 2.3rem;
+    width: 90%;
+    margin-left: 30px;
+  }
+  .main-nosotros p {
+    font-size: 1.1rem;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .main-nosotros li {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  div .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 40px 5px 40px;
+    margin-bottom: 0px;
+  }
+  div .card-body .VMV-picture {
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div .card-body .card-title {
+    font-size: 2rem;
+  }
+  div .card-body p {
+    font-size: 1rem;
+  }
+  div .card-body .vision-pic {
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div .card-body .mision-pic {
+    width: 35%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  div .card-body .valores-pic {
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-VMV,
+  .card-mision,
+  .card-valores,
+  .card-vision {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  /*-----------------------------------------
+                 CONTACTO
+------------------------------------------*/
+  #main-contactanos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .seccion1:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .seccion2:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /*------------------------------
+        CÓMO CONTACTAR
+------------------------------*/
+  div #contacto {
+    width: 100%;
+    height: 50vh;
+    margin-top: 100px;
+  }
+  div #contacto h4 {
+    width: 120%;
+    font-size: 2.4rem;
+    font-weight: 1000;
+  }
+  div #contacto p {
+    width: 130%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+  }
+  /*---------------------
+ ICONOS CONTACTO
+------------ ---------*/
+  .iconos-contacto {
+    width: 100%;
+  }
+  /*--------------------
+        fieldset
+----------------------*/
+  fieldset .escribinos {
+    width: 100%;
+    margin-right: 40px;
+    border: 1px solid black;
+  }
+  fieldset .escribinos textarea .text-querie {
+    width: 80em;
+  }
+  #botones-formulario {
+    width: 100%;
+  }
+  a.enviar {
+    padding: 5px;
+    width: 60%;
+    font-size: 0.8rem;
+    margin-right: 10px;
+    text-align: center;
+  }
+  a.limpiar {
+    padding: 5px;
+    width: 60%;
+    font-size: 0.8rem;
+    text-align: center;
   }
   /*---------------------------
         NUESTROS PROFES
@@ -1157,6 +1296,40 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     font-size: 1rem;
     text-decoration: underline;
   }
+  /*------------------------------
+            FOOTER
+-------------------------------*/
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 10px;
+  }
+  footer .texto-footer {
+    font-size: 1rem;
+  }
+  footer section.redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  footer section.redes img {
+    width: 8%;
+  }
 }
 
 /*
@@ -1185,30 +1358,55 @@ $grid-breakpoints: (
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  /*-----------------------------------------
+                  INDEX
+-----------------------------------------*/
   /*------------------------
           TITULO
 ------------------------*/
   header h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   header .titulo {
     font-size: 2rem;
   }
-  #contenedorMain img {
-    width: 250px;
-    margin: 10px 0px;
+  /*------------------------
+          BODY
+------------------------*/
+  body {
+    background-color: #8cfd4a;
   }
-  #cuerpo-main {
-    display: block;
+  #contenedorMain {
+    margin-top: 30px;
+    margin-bottom: 150px;
   }
-  .contenedorInfo h2 {
+  .contenedorInfo {
+    margin-bottom: 20px;
+  }
+  .contenedorInfo h3 {
     font-size: 2.5rem;
   }
+  .contenedorInfo article p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+  }
+  .contenedorInfo2 {
+    margin-bottom: 150px;
+  }
   .contenedor {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .seccion1:first-child {
     -webkit-box-ordinal-group: 3;
@@ -1220,16 +1418,10 @@ $grid-breakpoints: (
         -ms-flex-order: 1;
             order: 1;
   }
-  .contenedorPileta {
-    margin: 10px;
-  }
-  .contenedorInfo article p {
-    margin-top: 5px;
-  }
   /*----------------------------
- FOTO CANCHA CUBIERTA MAIN BODY
-------------------------------*/
-  #canchasCub {
+FOTO CANCHA CUBIERTA MAIN BODY
+-----------------------------*/
+  div #canchasCub {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1240,18 +1432,13 @@ $grid-breakpoints: (
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 281px;
-    width: 350px;
-    margin: 25px 10px 15px 20px;
+    width: 310px;
+    margin: 40px 30px 10px 40px;
   }
-  #canchasCub img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    width: 350px;
+  div #canchasCub img .card-img-top {
+    width: 100%;
   }
-  #canchasCub p {
+  div #canchasCub p {
     text-align: center;
     color: white;
     font-family: 'Julius Sans One', sans-serif;
@@ -1259,13 +1446,10 @@ $grid-breakpoints: (
     color: red;
     font-size: 2rem;
   }
-  #canchasCub img.top:hover {
-    opacity: 0.4;
-  }
-  /*---------------------------------
+  /*----------------------------------
 FOTO CANCHAS DE POLVO DEL MAIN BODY
 ----------------------------------*/
-  #canchasPolvo {
+  div #canchasPolvo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1276,19 +1460,13 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 260px;
-    width: 360px;
-    margin: 15px 60px 5px 70px;
+    width: 310px;
+    margin: 40px 20px 40px 30px;
   }
-  #canchasPolvo img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    height: 280px;
+  div #canchasPolvo img .card-img-top {
     width: 100%;
   }
-  #canchasPolvo p {
+  div #canchasPolvo p {
     text-align: center;
     color: white;
     font-family: 'Julius Sans One', sans-serif;
@@ -1296,13 +1474,13 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
     color: red;
     font-size: 2rem;
   }
-  #canchasPolvo img.top:hover {
-    opacity: 0.4;
-  }
-  /*--------------------------------
-FOTO IMAGEN PROFESOR DEL MAIN BODY
----------------------------------*/
-  #profesoresExp {
+  /*-------------------------------------
+            ROW DE ABAJO
+---------------------------------------*/
+  /*-------------------------
+    FOTO IMAGEN PROFESOR
+--------------------------*/
+  div #profesoresExp {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1313,32 +1491,23 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 290px;
     width: 350px;
-    margin: 5px 40px 0px 90px;
+    margin: 40px 10px 40px 50px;
   }
-  #profesoresExp img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+  div #profesoresExp img .card-img-top {
     width: 100%;
   }
-  #profesoresExp p {
+  div #profesoresExp p {
     text-align: center;
-    color: white;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
     color: red;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  #profesoresExp img.top:hover {
-    opacity: 0.4;
-  }
-  /*---------------------------
+  /*--------------------------
 FOTO ESCUELITA DEL MAIN BODY
 ----------------------------*/
-  #escuelaTenis {
+  div #escuelaTenis {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1349,27 +1518,18 @@ FOTO ESCUELITA DEL MAIN BODY
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 281px;
-    width: 350px;
-    margin: 40px 10px 10px 90px;
+    width: 300px;
+    margin: 30px 30px 50px 10px;
   }
-  #escuelaTenis img {
-    position: absolute;
-    height: 300px;
-    width: 350px;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+  div #escuelaTenis img .card-img-top {
+    width: 80%;
   }
-  #escuelaTenis p {
+  div #escuelaTenis p {
     text-align: center;
-    color: white;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
     color: red;
     font-size: 2rem;
-  }
-  #escuelaTenis img.top:hover {
-    opacity: 0.4;
   }
   /*---------------------------
         NUESTROS PROFES
@@ -1438,7 +1598,7 @@ FOTO ESCUELITA DEL MAIN BODY
   .mainQuerie .card .card-body p {
     font-size: 0.8rem;
   }
-  .mainQuerie .card .card-body h2 {
+  .mainQuerie .card .card-body h5 {
     font-size: 1.5rem;
     color: yellow;
   }
@@ -1448,30 +1608,97 @@ FOTO ESCUELITA DEL MAIN BODY
     font-size: 1rem;
     text-decoration: underline;
   }
-  /*---------------------------
+  /*-----------------------------------------
+                 CONTACTO
+------------------------------------------*/
+  /*--------------------
+        fieldset
+----------------------*/
+  fieldset .escribinos {
+    width: 80%;
+    margin-right: 40px;
+  }
+  fieldset .text-querie {
+    width: 18em;
+  }
+  #botones-formulario {
+    width: 100%;
+  }
+  a.enviar {
+    padding: 5px;
+    width: 60%;
+    font-size: 0.8rem;
+    margin-right: 10px;
+    text-align: center;
+  }
+  a.limpiar {
+    padding: 5px;
+    width: 60%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  /*------------------------------
+          CÓMO CONTACTAR
+  ------------------------------*/
+  div #contacto {
+    width: 70%;
+    height: 50vh;
+  }
+  .como-contactar h4 {
+    font-size: 1.8rem;
+    font-weight: 1000;
+  }
+  .como-contactar p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+  }
+  /*---------------------
+     ICONOS CONTACTO
+------------ ---------*/
+  .iconos-contacto {
+    width: 80%;
+  }
+  /*------------------------------
             FOOTER
-----------------------------*/
+-------------------------------*/
   footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 30px 0px;
-  }
-  footer section .footer {
-    width: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 10px;
   }
-  footer .redes {
-    width: 600px;
+  footer .texto-footer {
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: wheat;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  footer section.redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  footer section.redes img {
+    width: 8%;
   }
 }
 
@@ -1479,11 +1706,26 @@ FOTO ESCUELITA DEL MAIN BODY
             MAX-WIDTH 992px
 -------------------------------------*/
 @media screen and (max-width: 992px) {
-  .contenedorInfo article p {
-    margin-top: 5px;
+  .contenedorInfo, .contenedorInfo2 article p {
+    margin-top: 25px;
+    margin-bottom: 0px;
   }
-  footer {
-    margin-top: 5px;
+  .contenedorInfo2 {
+    padding-left: 0px;
+  }
+  /*-------------------------------------
+                ROWS
+---------------------------------------*/
+  .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /*----------------------------------
 FOTO CANCHAS DE POLVO DEL MAIN BODY
@@ -1499,15 +1741,10 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 280px;
     width: 280px;
-    margin: 50px 10px 0px 25px;
+    margin: 50px 20px 0px 10px;
   }
   #canchasPolvo img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
     height: 280px;
     width: 100%;
   }
@@ -1518,9 +1755,6 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
     font-weight: bold;
     color: red;
     font-size: 2rem;
-  }
-  #canchasPolvo img.top:hover {
-    opacity: 0.4;
   }
   /*----------------------------
 FOTO CANCHA CUBIERTA MAIN BODY
@@ -1537,14 +1771,10 @@ FOTO CANCHA CUBIERTA MAIN BODY
             justify-content: center;
     position: relative;
     height: 280px;
-    width: 280px;
-    margin: 50px 10px 20px 5px;
+    width: 310px;
+    margin: 50px 20px 20px 5px;
   }
   #canchasCub img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
     width: 310px;
   }
   #canchasCub p {
@@ -1555,12 +1785,12 @@ FOTO CANCHA CUBIERTA MAIN BODY
     color: red;
     font-size: 2rem;
   }
-  #canchasCub img.top:hover {
-    opacity: 0.4;
-  }
-  /*--------------------------------
-FOTO IMAGEN PROFESOR DEL MAIN BODY
----------------------------------*/
+  /*-------------------------------------
+            ROW DE ABAJO
+---------------------------------------*/
+  /*-------------------------
+    FOTO IMAGEN PROFESOR
+--------------------------*/
   #profesoresExp {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1572,28 +1802,20 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 281px;
-    width: 280px;
-    margin: 10px 20px 5px 25px;
+    width: 320px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 0px;
   }
   #profesoresExp img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    width: 290px;
-    height: 250px;
+    width: 90%;
   }
   #profesoresExp p {
     text-align: center;
-    color: white;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
     color: red;
     font-size: 1.5rem;
-  }
-  #profesoresExp img.top:hover {
-    opacity: 0.4;
   }
   /*--------------------------
 FOTO ESCUELITA DEL MAIN BODY
@@ -1609,27 +1831,87 @@ FOTO ESCUELITA DEL MAIN BODY
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 250px;
-    width: 250px;
-    margin: 20px 20px 5px 40px;
+    height: 30px;
+    width: 280px;
+    margin-left: 20px;
+    margin-right: 30px;
   }
   #escuelaTenis img {
-    position: absolute;
-    height: 250px;
-    width: 300px;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    width: 110%;
   }
   #escuelaTenis p {
     text-align: center;
-    color: white;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
     color: red;
     font-size: 2rem;
   }
-  #escuelaTenis img.top:hover {
-    opacity: 0.4;
+  /*-------------------------------------
+              CONTACTO
+---------------------------------------*/
+  /*--------------------
+        fieldset
+----------------------*/
+  .escribinos {
+    width: 40%;
+    padding: 15px;
+    margin: 50px 110px 50px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  /*------------------------------
+        CÓMO CONTACTAR
+------------------------------*/
+  #contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 75%;
+    height: 90vh;
+    margin: 40px 10px 10px 20px;
+  }
+  /*--------------------------------
+              FOOTER
+---------------------------------*/
+  footer p.texto-footer {
+    font-size: 1.1rem;
+    font-weight: 1000;
+    color: wheat;
+    width: 550px;
+    margin: 20px;
+  }
+  footer .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 800px;
+  }
+  footer .redes img {
+    width: 15%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

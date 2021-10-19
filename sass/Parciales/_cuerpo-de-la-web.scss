@@ -3,14 +3,15 @@ body{
 }
 
 #contenedorMain{
-    margin:60px 0px
+    margin-top:30px; 
+    margin-bottom: 50px;
 }
 
 #contenedorMain img {
     border-radius: 40px;
 }
 
-.contenedorInfo h2 {
+.contenedorInfo h3 {
     font-family: 'Julius Sans One', sans-serif;
     color: rgb(255, 0, 0);
     font-weight: 500;
@@ -18,13 +19,14 @@ body{
     font-size: 3rem;
 }
 
-.contenedorInfo article p{
+.contenedorInfo,.contenedorInfo2  article p{
     margin-top:35px;
     margin-bottom:0px;
 }
 
 .contenedorInfo article p,
-.contenedorPileta p {
+.contenedorInfo2  p {
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
+    font-weight: 900;
 }

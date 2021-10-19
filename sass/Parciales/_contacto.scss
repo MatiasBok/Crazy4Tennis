@@ -1,4 +1,4 @@
-#contactanos{
+#main-contactanos{
     @include flex-reverse;
 }
 /*------------------------------
@@ -16,6 +16,20 @@
 
 }
 
+/*------------------------------
+        CÓMO CONTACTAR
+------------------------------*/
+
+#contacto{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 75%;
+    height:90vh;
+    margin:80px 50px 10px 50px;
+}
+
 .como-contactar{
     font-family: 'Lacquer', cursive;
     display:flex;
@@ -26,7 +40,7 @@
 }
 
 .como-contactar h4{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 1000;
     color:crimson;
     text-align: center;
@@ -39,15 +53,7 @@
     padding:30px;
 }
 
-#contacto{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    align-items:center;
-    width: 75%;
-    height:90vh;
-    margin:80px 50px 10px 50px;
-}
+
 
 /*----------------------------------------------------
                     ICONOS CONTACTO

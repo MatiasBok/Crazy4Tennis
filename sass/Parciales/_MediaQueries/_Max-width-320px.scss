@@ -1,4 +1,19 @@
 /*----------------------------------------------------
+         BLOQUE del título principal en HOME
+-----------------------------------------------------*/
+@media screen and (max-width: 320px) {
+
+header h1{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size:2rem;
+    font-weight:500;
+    width:50%;
+    color:rgba(255, 251, 0, 0.87);
+    @include titulo-colores;
+    margin:0px;}
+
+    *----------------------------------------------------
         FOTO CANCHAS DE POLVO DEL MAIN BODY
 -----------------------------------------------------*/
 
@@ -7,18 +22,19 @@
     align-items:center;
     justify-content:center;
     position:relative;
-    height:300px;
+    height:281px;
     width:380px;
-    margin:100px 0px 0px 25px;
+    margin:100px 20px 0px 25px;
 }
 
 #canchasPolvo img {    
     @include transitions;
-    width:100%; 
+    width:110%; 
   }
 
 #canchasPolvo p {
       text-align:center;
+      color:white;
       font-family: 'Julius Sans One', sans-serif;
       font-weight: bold;
       color:red;
@@ -35,12 +51,11 @@
 
 #canchasCub{
     display:flex;
-    align-items:center;
     justify-content:center;
     position:relative;
-    height:281px;
+    height:28px;
     width:350px;
-    margin:100px 10px 20px 20px;
+    margin:50px 5px 10px 10px;
 }
 
 #canchasCub img {
@@ -50,6 +65,7 @@
 
 #canchasCub p {
       text-align:center;
+      color:white;
       font-family: 'Julius Sans One', sans-serif;
       font-weight: bold;
       color:red;
@@ -81,6 +97,7 @@
 
 #profesoresExp p {
       text-align:center;
+      color:white;
       font-family: 'Julius Sans One', sans-serif;
       font-weight: bold;
       color:red;
@@ -117,6 +134,7 @@
 
 #escuelaTenis p {
       text-align:center;
+      color:white;
       font-family: 'Julius Sans One', sans-serif;
       font-weight: bold;
       color:red;
@@ -127,3 +145,6 @@
     opacity:0.4;
   }
 
+
+
+}
