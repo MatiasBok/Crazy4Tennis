@@ -11,15 +11,9 @@
           TITULO 
  ------------------------*/
     
- header h1{
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    font-weight:500;
-    width:100%;
-    color:rgba(255, 251, 0, 0.87);
-    @include titulo-colores;
-    margin:0px;} 
+ h1.titulo-querie{
+     font-size: 4rem;
+}
 
 /*------------------------
    TITULO EN OTRAS PAG
@@ -31,6 +25,14 @@ h2.titulo{
 /*------------------------
            BODY
 -------------------------*/
+
+.contenedor{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:0px;
+}
 
 #contenedorMain img {
  width: 250px;}
@@ -55,22 +57,12 @@ FOTO CANCHA CUBIERTA MAIN BODY
     position:relative;
     height:281px;
     width:350px;
-    margin:25px 10px 15px 20px;}
+    margin:0px 10px 15px 20px;
 
-#canchasCub img {
-    width:4000px;}
+    img {
+        width:100%;}
 
-#canchasCub p {
-      text-align:center;
-      color:white;
-      font-family: 'Julius Sans One', sans-serif;
-      font-weight: bold;
-      color:yellow;
-      font-size:2rem;}
-
-#canchasCub img.top:hover {
-    opacity:0;}
-  
+}
 /*---------------------------------
 FOTO CANCHAS DE POLVO DEL MAIN BODY
 ----------------------------------*/
@@ -87,16 +79,7 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
 #canchasPolvo img {
     width:100%;}
 
-#canchasPolvo p {
-      text-align:center;
-      color:white;
-      font-family: 'Julius Sans One', sans-serif;
-      font-weight: bold;
-      color:red;
-      font-size:2rem;}
 
-#canchasPolvo img.top:hover {
-    opacity:0.4;}
 
 /*--------------------------------
 FOTO IMAGEN PROFESOR DEL MAIN BODY
@@ -107,24 +90,13 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     align-items:center;
     justify-content:center;
     position:relative;
-    height:290px;
-    width:350px;
-    margin:5px 40px 0px 90px;}
+    width:100%;
+    
+        img {
+            width: 90%;
+            margin-left:5px;}
 
-#profesoresExp img {
-   width: 100%;}
-
-#profesoresExp p {
-      text-align:center;
-      color:white;
-      font-family: 'Julius Sans One', sans-serif;
-      font-weight: bold;
-      color:red;
-      font-size:2rem;}
-
-#profesoresExp img.top:hover {
-    opacity:0.4;}
-
+}
 /*---------------------------
 FOTO ESCUELITA DEL MAIN BODY
 ----------------------------*/
@@ -134,25 +106,11 @@ FOTO ESCUELITA DEL MAIN BODY
     align-items:center;
     justify-content:center;
     position:relative;
-    height:281px;
-    width:350px;
-    margin:40px 10px 10px 90px;}
+    
+    img {
+        width: 100%;}
 
-#escuelaTenis img {
-   
-    height:300px;
-    width: 350px;}
-
-#escuelaTenis p {
-      text-align:center;
-      color:white;
-      font-family: 'Julius Sans One', sans-serif;
-      font-weight: bold;
-      color:red;
-      font-size:2rem;}
-
-#escuelaTenis img.top:hover {
-    opacity:0.4;}
+  }
 
 
 /*-----------------------
@@ -254,12 +212,12 @@ div #contacto{
     margin-top:100px; 
 
     h4{ 
-        width:120%;
+        width:100%;
         font-size: 2.4rem;
         font-weight: 1000;}
     
      p{
-        width:130%;
+        width:100%;
         font-size: 1.3rem;
         font-weight: 700;
         text-align:center;
@@ -271,7 +229,7 @@ div #contacto{
 ------------ ---------*/
 
 .iconos-contacto{
-width:100%;}
+width:70%;}
 
 
 /*--------------------
@@ -375,16 +333,21 @@ footer {
     padding-bottom:10px;
   
     .texto-footer{    
-            font-size: 1rem;}
+            font-size: 1.1rem;
+            font-weight: 600;
+            color:wheat;
+            width: 100%;
+            margin-top:20px;
+            text-align: center;}
 
     section.redes{
         display:flex;
         justify-content: space-evenly;
         width:100%;
+        padding-bottom:20px;
 
         img{
-            width: 8%;}
+            width: 5%;}
     }
 }
 }
-  

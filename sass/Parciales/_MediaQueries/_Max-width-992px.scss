@@ -12,7 +12,7 @@
         padding-left: 0px;
       }
 /*-------------------------------------
-                ROWS
+                MAIN
 ---------------------------------------*/
 .contenedor{
   display:flex;
@@ -72,9 +72,9 @@ FOTO CANCHA CUBIERTA MAIN BODY
       font-size:2rem;
 }
 
-/*-------------------------------------
+/*--------------------------------
             ROW DE ABAJO
----------------------------------------*/
+---------------------------------*/
 /*-------------------------
     FOTO IMAGEN PROFESOR
 --------------------------*/
@@ -127,8 +127,17 @@ FOTO ESCUELITA DEL MAIN BODY
       font-size:2rem;}
 
 /*-------------------------------------
+              RESERVAS
+-------------------------------------*/
+section.reservas{
+
+  .titulo-reservas{   
+    text-align: center;}
+    
+}
+/*-------------------------------------
               CONTACTO
----------------------------------------*/
+--------------------------------------*/
 /*--------------------
         fieldset
 ----------------------*/
@@ -143,9 +152,9 @@ FOTO ESCUELITA DEL MAIN BODY
   align-items:flex-start;
 }
 
-/*------------------------------
-        CÓMO CONTACTAR
-------------------------------*/
+/*-------------------------
+      CÓMO CONTACTAR
+--------------------------*/
 
 #contacto{
   display:flex;
@@ -157,12 +166,75 @@ FOTO ESCUELITA DEL MAIN BODY
   margin:40px 10px 10px 20px;
 }
 
+/*-------------------------------------
+                NOSOTROS
+---------------------------------------*/
+.main-nosotros{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+    h5{
+      font-size: 2.5rem;}
+
+      p{
+        font-size:1rem;}
+}
+
+.card-VMV{
+  margin-left: 100px;
+  width:90%;
+
+    p{
+      font-size: 0.9rem;
+      width: 500px;}
+  }
+
+  .card-vision{
+          margin-bottom:30px;
+            
+      .img-fluid{
+           width:30%;
+           margin-left:20px;
+           margin-right: 0px;}
+
+      p{
+        font-size:0.9rem;
+        width:550px;
+      }
+      
+}
+
+  .card-mision{
+              
+         .img-fluid{
+               width:18%;
+               margin-left:50px;}
+        
+        .card-text{
+            font-size: 0.9rem;
+            width: 550px;}
+
+    }
+      
+      .card-valores{
+           
+              .img-fluid{
+                   width:40%;}
+
+              .card-text{
+                    font-size: 0.9rem;
+                    width: 500px;}
+                
+}
+
 /*--------------------------------
               FOOTER
 ---------------------------------*/
    footer {
       
-      p.texto-footer{    
+      .texto-footer{    
         font-size: 1.1rem;
         font-weight: 1000;
         color:wheat;
@@ -172,7 +244,7 @@ FOTO ESCUELITA DEL MAIN BODY
       .redes{
           display:flex;
           justify-content: space-evenly;
-          width:800px;
+          width:40%;
   
             img{
               width: 15%;}

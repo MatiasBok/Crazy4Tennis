@@ -246,9 +246,98 @@ FOTO ESCUELITA DEL MAIN BODY
        }
       }
     }
+
+/*----------------------------------------------
+                    NOSOTROS
+-----------------------------------------------*/
+.main-nosotros{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  
+      h5{
+        font-size: 2.5rem;}
+  
+      p{
+        font-size:1rem;}
+  }
+  
+.card-VMV{
+    margin-right:70px;
+    margin-left: 80px;
+    width:90%;
+
+      .img-fluid{
+         width:50%;
+         margin-left:0px;
+         margin-right: 0px;}
+  
+      p{
+        font-size: 0.8rem;
+        width: 400px;}
+}
+  
+.card-vision{
+    margin-bottom:30px;
+              
+    .img-fluid{
+         width:30%;
+         margin-left:0px;}
+  
+    p{
+         font-size:0.8rem;
+          width:550px;}
+    }
+  
+.card-mision{
+                
+    .img-fluid{
+          width:18%;
+          margin-left:50px;}
+          
+    .card-text{
+          font-size: 0.8rem;
+          width: 550px;}
+}
+        
+.card-valores{
+    padding-left:0px;   
+
+    .img-fluid{
+          width:30%;}
+  
+    .card-text{
+          font-size: 0.8rem;
+          width: 450px;}                  
+}
+  
+/*-----------------------------------------------
+                    RESERVAS
+------------------------------------------------*/
+.main-reservas { 
+    
+    section.reservas{ 
+    
+        .titulo-reservas{ 
+            font-size: 2.5rem;}
+
+        .parrafo-reservas{
+                color:rgb(235, 85, 31);
+                font-size: 1.1rem;
+                margin-left:40px;
+                margin-right:40px;}
+
+        .imagen-reservas{
+                width:70%;}
+}
+}
 /*-----------------------------------------
                  CONTACTO
 ------------------------------------------*/ 
+#main-contactanos{
+    display:flex;
+    flex-direction: row;}
 /*--------------------
         fieldset
 ----------------------*/
@@ -317,21 +406,21 @@ FOTO ESCUELITA DEL MAIN BODY
         padding-bottom:10px;
       
         .texto-footer{    
-                font-size: 1.3rem;
-                font-weight: 200;
+                font-size: 1.1rem;
+                font-weight: 600;
                 color:wheat;
                 width: 100%;
                 margin-top:20px;
-                margin-right:20px;
                 text-align: center;}
 
         section.redes{
             display:flex;
             justify-content: space-evenly;
             width:100%;
+            padding-bottom:20px;
 
             img{
-                width: 8%;}
+                width: 5%;}
         }
     }
 

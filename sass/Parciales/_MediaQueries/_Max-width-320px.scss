@@ -1,21 +1,24 @@
-/*----------------------------------------------------
-         BLOQUE del título principal en HOME
------------------------------------------------------*/
+
 @media screen and (max-width: 320px) {
 
-header h1{
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-    font-size:2rem;
-    font-weight:500;
-    width:50%;
-    color:rgba(255, 251, 0, 0.87);
-    @include titulo-colores;
-    margin:0px;}
-
-    *----------------------------------------------------
-        FOTO CANCHAS DE POLVO DEL MAIN BODY
+/*----------------------------------------------------
+                      INDEX
 -----------------------------------------------------*/
+
+    h1.titulo-querie{
+         font-size: 6rem;}
+
+/*-------------------------------------------
+              CUERPO DE LA WEB
+-------------------------------------------*/
+
+#contenedorMain{
+  margin-top:10px;
+}
+
+/*--------------------------------
+      FOTO CANCHAS DE POLVO
+---------------------------------*/
 
 #canchasPolvo{
     display:flex;

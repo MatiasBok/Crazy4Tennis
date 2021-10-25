@@ -7,12 +7,13 @@ footer{
     width: 100%;
     height:200;
 
-
-    .texto-footer{    
-        font-size: 16px;
+    .texto-footer{  
+        display:flex; 
+        flex-direction: column; 
+        width:120%;
+        font-size: 1.2rem;
         font-weight: 1000;
         color:wheat;
-        width: 600px;
         margin:20px;}
 
     .redes{
@@ -20,7 +21,7 @@ footer{
         justify-content: space-evenly;}
 
     .redes img{
-        width: 5%;}
+        width: 8%;}
 
     .Facebook:hover{
         @include hover-media;}

@@ -1,13 +1,18 @@
 body{
     background-color: greenyellow;
+
+    .contenedor{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;}
 }
 
 #contenedorMain{
-    margin-top:30px; 
+    margin-top:20px; 
     margin-bottom: 50px;
 }
 
-#contenedorMain img {
+#contenedorMain img { /*Bordes redondeados de las imágenes*/
     border-radius: 40px;
 }
 
