@@ -20,7 +20,7 @@ ICONOS CONTACTO
 ----------------*/
 
 @mixin hover{
-    transform: scale(1.5);
+    transform: scale(1.8);
     transition: 1.5s;
 }
 
@@ -52,7 +52,7 @@ ICONOS CONTACTO
 ----------------------------*/
 
 @mixin hover-media{
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 1.5s;
 }
 

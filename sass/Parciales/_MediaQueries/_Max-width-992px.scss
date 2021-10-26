@@ -241,13 +241,19 @@ section.reservas{
         width: 550px;
         margin:20px;}
 
-      .redes{
+        .redes{
           display:flex;
-          justify-content: space-evenly;
-          width:40%;
+          justify-content:space-evenly;
+          align-items: center;
+          margin-left: 30px;
   
-            img{
-              width: 15%;}
+          a {
+             margin:30px;
+             width: 40px;
+              
+              img{
+                   width: 120%;}
+          }
       }
    }
 }

@@ -774,35 +774,32 @@ main h4 {
   margin-top: 10px;
 }
 
-.Whatsapp {
-  width: 20%;
+.iconos-contacto a {
+  margin: 30px;
+  width: 90px;
 }
 
-.Telegram {
-  width: 20%;
-}
-
-.Email {
-  width: 20%;
+.iconos-contacto img {
+  width: 120%;
 }
 
 .Whatsapp:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 .Telegram:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 .Email:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
@@ -895,36 +892,45 @@ footer .redes {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
 }
 
-footer .redes img {
-  width: 8%;
+footer .redes a {
+  margin: 30px;
+  width: 90px;
+}
+
+footer .redes a img {
+  width: 80%;
 }
 
 footer .Facebook:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 footer .Instagram:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 footer .Twitter:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 footer .Youtube:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
@@ -1203,10 +1209,17 @@ FOTO ESCUELITA DEL MAIN BODY
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30px;
   }
-  footer .redes img {
-    width: 15%;
+  footer .redes a {
+    margin: 30px;
+    width: 40px;
+  }
+  footer .redes a img {
+    width: 120%;
   }
 }
 
@@ -1583,11 +1596,26 @@ FOTO ESCUELITA DEL MAIN BODY
   /*--------------------
         fieldset
 ----------------------*/
-  fieldset .escribinos {
-    width: 80%;
-    margin-right: 40px;
+  .escribinos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+    margin: 50px 110px 50px 0px;
+    margin-right: 10px;
   }
-  fieldset .text-querie {
+  .escribinos .text-querie {
     width: 18em;
   }
   #botones-formulario {
@@ -1610,8 +1638,9 @@ FOTO ESCUELITA DEL MAIN BODY
           CÓMO CONTACTAR
   ------------------------------*/
   div #contacto {
-    width: 70%;
+    width: 55%;
     height: 50vh;
+    margin-left: 0px;
   }
   .como-contactar h4 {
     font-size: 1.8rem;
@@ -1656,18 +1685,24 @@ FOTO ESCUELITA DEL MAIN BODY
     margin-top: 20px;
     text-align: center;
   }
-  footer section.redes {
+  footer .redes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 100%;
-    padding-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30px;
   }
-  footer section.redes img {
-    width: 5%;
+  footer .redes a {
+    margin: 0px;
+    width: 90px;
+  }
+  footer .redes a img {
+    width: 60%;
   }
 }
 
@@ -1829,22 +1864,7 @@ FOTO ESCUELITA DEL MAIN BODY
   /*----------------------------------------
                 NOSOTROS
 ------------------------------------------*/
-  .main-nosotros h5 {
-    font-size: 2.3rem;
-    width: 90%;
-    margin-left: 30px;
-  }
-  .main-nosotros p {
-    font-size: 1.1rem;
-    text-align: justify;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .main-nosotros li {
-    font-size: 1rem;
-    text-align: justify;
-  }
-  div .card-body {
+  .main-nosotros {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1852,52 +1872,95 @@ FOTO ESCUELITA DEL MAIN BODY
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px 40px 5px 40px;
-    margin-bottom: 0px;
-  }
-  div .card-body .VMV-picture {
-    width: 70%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  div .card-body .card-title {
-    font-size: 2rem;
+  .main-nosotros h5 {
+    font-size: 2.3rem;
+    width: 90%;
+    margin-left: 30px;
   }
-  div .card-body p {
+  .main-nosotros .lead {
     font-size: 1rem;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  div .card-body .vision-pic {
-    width: 70%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .main-nosotros li {
+    font-size: 1rem;
+    text-align: justify;
   }
-  div .card-body .mision-pic {
-    width: 35%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
+  .main-nosotros .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  div .card-body .valores-pic {
-    width: 70%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .card-VMV,
-  .card-mision,
-  .card-valores,
-  .card-vision {
-    margin-bottom: 0px;
+  .main-nosotros .card-VMV {
     margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .main-nosotros .card-VMV p {
+    font-size: 0.9rem;
+    width: 500px;
+    color: orangered;
+    font-weight: 600;
+  }
+  .main-nosotros .card-vision .img-fluid {
+    width: 40%;
+  }
+  .main-nosotros .card-vision p {
+    font-size: 0.9rem;
+    width: 500px;
+    color: darkgreen;
+    font-weight: 600;
+  }
+  .main-nosotros .card-mision {
+    margin-bottom: 0px;
+  }
+  .main-nosotros .card-mision .img-fluid {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  .main-nosotros .card-mision ol {
+    width: 95%;
+  }
+  .main-nosotros .card-mision ol li {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: darkblue;
+  }
+  .main-nosotros .card-valores {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .main-nosotros .card-valores .img-fluid {
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 70px;
+  }
+  .main-nosotros .card-valores ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 115%;
+  }
+  .main-nosotros .card-valores ul li {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: darkred;
   }
   /*-----------------------------------------
                  CONTACTO
@@ -1948,8 +2011,8 @@ FOTO ESCUELITA DEL MAIN BODY
     padding: 20px;
   }
   /*---------------------
- ICONOS CONTACTO
------------- ---------*/
+    ICONOS CONTACTO
+---------------------*/
   .iconos-contacto {
     width: 70%;
   }
@@ -2000,8 +2063,20 @@ FOTO ESCUELITA DEL MAIN BODY
     margin-top: 10px;
   }
   .mainQuerie .titulos-profes {
-    margin-right: 50px;
-    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 20px;
     margin-top: 10px;
   }
   .mainQuerie .titulos-profes h5 {
@@ -2022,9 +2097,16 @@ FOTO ESCUELITA DEL MAIN BODY
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mainQuerie .card {
     size: 100%;
@@ -2078,18 +2160,24 @@ FOTO ESCUELITA DEL MAIN BODY
     margin-top: 20px;
     text-align: center;
   }
-  footer section.redes {
+  footer .redes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 100%;
-    padding-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30px;
   }
-  footer section.redes img {
-    width: 5%;
+  footer .redes a {
+    margin-bottom: 20px;
+    width: 70px;
+  }
+  footer .redes a img {
+    width: 70%;
   }
 }
 

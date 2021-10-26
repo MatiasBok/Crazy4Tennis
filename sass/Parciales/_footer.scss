@@ -17,11 +17,19 @@ footer{
         margin:20px;}
 
     .redes{
-        display:flex; 
-        justify-content: space-evenly;}
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-left: 30px;
 
-    .redes img{
-        width: 8%;}
+        a {
+           margin:30px;
+           width: 90px;
+            
+            img{
+                 width: 80%;}
+        }
+    }
 
     .Facebook:hover{
         @include hover-media;}
