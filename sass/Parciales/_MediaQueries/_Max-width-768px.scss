@@ -1,15 +1,3 @@
-/*
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
-*/
-
-
 /*-----------------------------------------------------
                   MEDIA SCREEN 768px
 -----------------------------------------------------*/
@@ -52,7 +40,8 @@ header .titulo{
         margin-bottom:150px;}
 
     .contenedorInfo{ 
-        margin-bottom:20px;
+        margin-bottom:40px;
+        width:50%;
 
             h3 {
                 font-size: 2.5rem;}
@@ -65,7 +54,8 @@ header .titulo{
       }
 
       .contenedorInfo2{ 
-        margin-bottom:150px;}
+        margin-bottom:150px;
+        width:50%;}
     
     .contenedor{
        width:100%;
@@ -84,49 +74,27 @@ header .titulo{
 FOTO CANCHA CUBIERTA MAIN BODY
 -----------------------------*/
 
-    div #canchasCub{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        position:relative;
-        width:310px;
-        margin:40px 30px 10px 40px;
+    #canchasCub{
+        @include fotos-flex;
+        width:40%;
+        margin:50px 30px 50px 40px;
 
-        img .card-img-top {
+        img{
            width: 100%;}
-
-        p {
-            text-align:center;
-            color:white;
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bold;
-            color:red;
-            font-size:2rem;}
     }
 
 /*----------------------------------
 FOTO CANCHAS DE POLVO DEL MAIN BODY
 ----------------------------------*/
-    div #canchasPolvo{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        position:relative;
-        width: 310px;
-        margin:40px 20px 40px 30px;
+    #canchasPolvo{
+        @include fotos-flex;
+        width: 200%;
+        margin:80px 20px 60px 30px;
 
 
-        img .card-img-top {
+        img{
             width:100%;}
-
-    p {
-        text-align:center;
-        color:white;
-        font-family: 'Julius Sans One', sans-serif;
-        font-weight: bold;
-        color:red;
-        font-size:2rem;}
-}
+    }
 
 /*-------------------------------------
             ROW DE ABAJO
@@ -135,49 +103,28 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
     FOTO IMAGEN PROFESOR
 --------------------------*/
 
-    div #profesoresExp{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        position:relative;
-        width:350px;
-        margin:40px 10px 40px 50px;
+    #profesoresExp{
+        @include fotos-flex;
+        width:40%;
+        margin:80px 10px 70px 30px;
 
 
-        img .card-img-top{
+        img{
            width: 100%;}
-
-        p {
-            text-align:center;
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bold;
-            color:red;
-            font-size:1.5rem;}
 }
 
 /*--------------------------
 FOTO ESCUELITA DEL MAIN BODY
 ----------------------------*/
 
-    div #escuelaTenis{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        position:relative;
-        width:300px;
-        margin:30px 30px 50px 10px;
+    #escuelaTenis{
+        @include fotos-flex;
+        width:45%;
+        margin:0px 10px 10px 20px;
 
-        img .card-img-top{
-            
-            width: 80%;}
-  
-
-        p {
-            text-align:center;
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bold;
-            color:red;
-            font-size:2rem;}
+        img{
+            width: 100%;
+            margin-right:100px;}
 }
 
 /*---------------------------
@@ -203,10 +150,11 @@ FOTO ESCUELITA DEL MAIN BODY
               font-size: 1.3rem;}
     
             .profesQuerie{
-              width:90%;
+              width:100%;
               font-weight: 600;
               font-size: 1.3rem;
               margin-bottom:0px;
+              margin-left:30px;
               padding-right:10px;
               text-align:center;}
         }
@@ -221,9 +169,10 @@ FOTO ESCUELITA DEL MAIN BODY
         margin-left:5px;}
  
      .card{ 
-         width: 12rem;
-         min-height:200px;
+         width: 110%;
+         min-height:350px;
          margin-bottom: 50px;
+         text-align:center;
                 
          .card-img-top{
              width:80%;} 
@@ -264,9 +213,9 @@ FOTO ESCUELITA DEL MAIN BODY
   }
   
 .card-VMV{
-    margin-right:70px;
-    margin-left: 80px;
-    width:90%;
+    margin-right:40px;
+    margin-left: 160px;
+    width:80%;
 
       .img-fluid{
          width:50%;
@@ -343,15 +292,15 @@ FOTO ESCUELITA DEL MAIN BODY
 ----------------------*/
  
 .escribinos{
-            display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items:flex-start;
-            width:100%;
-            padding:15px;
-    margin:50px 110px 50px 0px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items:flex-start;
+        width:80%;
+        padding:15px;
+        margin:50px 110px 50px 0px;
     
-            margin-right:10px;
+        margin-right:10px;
             
     	.text-querie{
             width:18em;}
@@ -374,14 +323,14 @@ FOTO ESCUELITA DEL MAIN BODY
         font-size:0.8rem;
         text-align: center;}
       
-  /*------------------------------
-          CÓMO CONTACTAR
-  ------------------------------*/
+/*------------------------------
+        CÓMO CONTACTAR
+------------------------------*/
   
     div #contacto{
-        width: 55%;
+        width: 100%;
         height:50vh;
-        margin-left:0px;}
+        margin-left:20px;}
 
     .como-contactar{ 
         h4{
@@ -395,12 +344,8 @@ FOTO ESCUELITA DEL MAIN BODY
             padding:30px;}
     }
 
-/*---------------------
-     ICONOS CONTACTO
------------- ---------*/
-
 .iconos-contacto{
-    width:80%;}
+    width:100%;}
 
   
 /*------------------------------

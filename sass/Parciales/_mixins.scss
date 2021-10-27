@@ -36,6 +36,13 @@ ICONOS CONTACTO
     transition: opacity 1s ease-in-out;
 }
 
+@mixin fotos-flex{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+}
+
 /*----------------------------
        NUESTROS PROFES
 ----------------------------*/

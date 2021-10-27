@@ -11,7 +11,7 @@
           TITULO 
  ------------------------*/
     
- h1.titulo-querie{
+header h1{
      font-size: 4rem;
 }
 
@@ -26,92 +26,108 @@ h2.titulo{
            BODY
 -------------------------*/
 
+#cuerpo-main {
+    display: block;}
+
+#contenedorMain{
+    margin-top:30px;
+    margin-bottom:150px;}
+
+.contenedorInfo{ 
+    margin-bottom:40px;
+    width:60%;
+    
+        h3 {
+           font-size: 2.5rem;}
+
+        article p{
+            margin-top:10px;
+            margin-bottom:0px;
+            font-family: 'Julius Sans One', sans-serif;
+            text-align: center;}
+  }
+
+  .contenedorInfo2{ 
+    margin-bottom:80px;
+    width:60%;}
+
+.contenedor{
+   width:100%;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-evenly;}
+
+.seccion1:first-child {
+   order: 2;}
+    
+.seccion2:nth-child(2) {
+   order: 1;}
+
 .contenedor{
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin:0px;
-}
-
-#contenedorMain img {
- width: 250px;}
-
-#cuerpo-main {
-    display: block;}
-
+    margin:0px;}
+    
 .menuNav .itemsIzquierda {
     flex-direction: column;}
 
-.contenedorInfo h3 {
-    font-size: 2.5rem;}
+.contenedorInfo 
 
 /*----------------------------
 FOTO CANCHA CUBIERTA MAIN BODY
 ------------------------------*/
     
 #canchasCub{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    height:281px;
-    width:350px;
-    margin:0px 10px 15px 20px;
+    @include fotos-flex;
+    width:60%;
+    margin:50px 30px 50px 40px;
 
-    img {
-        width:100%;}
+    img .card-img-top {
+       width: 100%;}
 
-}
+    }
 /*---------------------------------
 FOTO CANCHAS DE POLVO DEL MAIN BODY
 ----------------------------------*/
 
-#canchasPolvo{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    height:260px;
-    width:360px;
-    margin:15px 60px 5px 70px;}
+    #canchasPolvo{
+         @include fotos-flex;
+         width:150%;
+         margin:15px 60px 5px 70px;
 
-#canchasPolvo img {
-    width:100%;}
+         img{
+            width:100%;}
 
-
+    }
 
 /*--------------------------------
 FOTO IMAGEN PROFESOR DEL MAIN BODY
 ---------------------------------*/
 
-#profesoresExp{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    width:100%;
+    #profesoresExp{
+        @include fotos-flex;
+        width:50%;
     
         img {
-            width: 90%;
+            width: 100%;
             margin-left:5px;}
 
-}
+    }
+
 /*---------------------------
 FOTO ESCUELITA DEL MAIN BODY
 ----------------------------*/
 
-#escuelaTenis{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
+    #escuelaTenis{
+        @include fotos-flex;
+        width:50%;
+        margin:30px 10px 0px 20px;
     
-    img {
-        width: 100%;}
-
-  }
-
+        img {
+            width: 100%;}
+    }
 
 /*-----------------------
       ORDEN OBJETOS
@@ -269,14 +285,22 @@ width:70%;}
 /*--------------------
         fieldset
 ----------------------*/
-    fieldset .escribinos{
-            width:100%;
-            margin-right:40px;
+    .escribinos{
+            width:80%;
+            margin:80px 60px 30px 60px;
             border: 1px solid black;
+            align-items: center;
+            text-align:center;
         
-    textarea .text-querie{
-            width:80em;}
+            form{
+                margin-top: 20px;
+                text-align:center;}
+                
+            .text-querie{
+            width:25em;}
     }
+
+    
 
     #botones-formulario{
         width:100%;}

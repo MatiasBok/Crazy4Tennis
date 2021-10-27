@@ -22,16 +22,25 @@ body{
     font-weight: 500;
     text-align: center;
     font-size: 3rem;
+    width:100%;
 }
 
-.contenedorInfo,.contenedorInfo2  article p{
-    margin-top:35px;
-    margin-bottom:0px;
-}
-
-.contenedorInfo article p,
-.contenedorInfo2  p {
+.contenedorInfo div p{ /*texto de arriba*/
+    margin:35px 40px 0px 15px;
+    width:95%;
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
     font-weight: 900;
+}
+
+.contenedorInfo2 div p{ /*texto de abajo*/
+    width:95%;
+    margin:30px 35px 30px 30px;
+    margin-bottom:0px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    
+    
+    
 }

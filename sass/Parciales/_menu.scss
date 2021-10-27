@@ -25,25 +25,6 @@
     }
         
     /*----------------------------------------------------
-                           SUBMENU
-    -----------------------------------------------------*/
-    .menuNav .itemsIzquierda .submenu{
-        background-color: indigo;
-    }
-    
-    .menuNav .itemsIzquierda .submenu li a{
-        color: white;
-        border-bottom: 2px solid transparent;
-        transition: all 0.2s ease-in-out;
-    } 
-    
-    .menuNav .itemsIzquierda .submenu li a:hover{
-        color: white;
-        background-color: transparent;
-        border-bottom:2px solid white;
-    }
-    
-    /*----------------------------------------------------
                         MENU HAMBURGUESA
     -----------------------------------------------------*/
     .navbar-toggler { /*Esto modifica al botón*/
@@ -57,14 +38,12 @@
     }
     
     .navbar-toggler { /*Esto modifica al botón*/
-        width: 50px;
-        height:50px;
+        width: 5%;
         padding: 0px;
     }
     
     .icono img {
-        width: 50px;
-        height: 50px;
+        width: 140%;
         /* border: 3px dotted white; */
         padding: 5px;
     }
