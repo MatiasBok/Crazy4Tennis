@@ -5,15 +5,7 @@
 @media screen and (max-width: 768px) {
 
     #cuerpo-main{
-        display: block;}
-
-/*------------------------
-            MENU
-------------------------*/
-
-    .menuNav .itemsIzquierda {
-        flex-direction: column;}
-
+       display: block;}
 
 /*-----------------------------------------
                   INDEX
@@ -23,11 +15,33 @@
           TITULO
 ------------------------*/
 
-header h1{
-    font-size:5rem;} 
+h1.titulo-querie{
+        font-size:4rem;
+        width:100%;} 
 
-header .titulo{
-        font-size: 2rem;}
+h2.titulo{
+        font-size: 2rem;
+        width:100%;
+        padding:10px;}
+
+/*------------------------
+            MENU
+------------------------*/
+
+    .navegacion {
+        background-color:chocolate;
+        height: 50px;} 
+
+    .menuNav .itemsIzquierda {
+        flex-direction: column;}
+
+    .navbar-toggler { /*Esto modifica al botón*/
+        width: 5%;
+        } 
+    
+    .icono img {
+        width: 110%;
+        padding: 3px;}
 
 /*------------------------
           BODY
@@ -54,7 +68,7 @@ header .titulo{
       }
 
       .contenedorInfo2{ 
-        margin-bottom:150px;
+        margin-bottom:110px;
         width:50%;}
     
     .contenedor{
@@ -77,7 +91,7 @@ FOTO CANCHA CUBIERTA MAIN BODY
     #canchasCub{
         @include fotos-flex;
         width:40%;
-        margin:50px 30px 50px 40px;
+        margin:80px 30px 100px 40px;
 
         img{
            width: 100%;}
@@ -88,8 +102,8 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
 ----------------------------------*/
     #canchasPolvo{
         @include fotos-flex;
-        width: 200%;
-        margin:80px 20px 60px 30px;
+        width: 40%;
+        margin:100px 20px 90px 30px;
 
 
         img{
@@ -106,7 +120,7 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
     #profesoresExp{
         @include fotos-flex;
         width:40%;
-        margin:80px 10px 70px 30px;
+        margin:90px 10px 70px 30px;
 
 
         img{
@@ -303,23 +317,24 @@ FOTO ESCUELITA DEL MAIN BODY
         margin-right:10px;
             
     	.text-querie{
-            width:18em;}
+            width:100%;}
     }
 
     #botones-formulario{
         width:100%;
-        }
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;}
 
     a.enviar{
         padding:5px;
-        width: 60%;
+        width: 40%;
         font-size:0.8rem;
-        margin-right:10px;
         text-align: center;}
         
     a.limpiar{
         padding:5px;
-        width:60%;
+        width:50%;
         font-size:0.8rem;
         text-align: center;}
       

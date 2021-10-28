@@ -18,13 +18,12 @@ header h1{
          TITULO PRINCIPAL EN OTRAS PAGINAS
 -----------------------------------------------------*/
 
-.titulo{
-    margin:0px;
-    width:100%;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size:5rem;
-    font-weight:500;
-    line-height: 2;
-    color:rgb(233, 248, 17);
-    @include titulo-colores;
-}
+    h2.titulo{
+        margin:0px;
+        width:100%;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size:5rem;
+        font-weight:500;
+        line-height: 2;
+        color:rgb(233, 248, 17);
+        @include titulo-colores;}

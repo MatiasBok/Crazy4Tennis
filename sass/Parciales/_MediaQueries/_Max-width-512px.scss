@@ -4,7 +4,27 @@
 
 @media screen and (max-width: 512px) {
 
-    .navegacion {
+/*-----------------------------------------
+                   INDEX
+------------------------------------------*/
+
+/*------------------------
+          TITULO
+------------------------*/
+
+        h1.titulo-querie{
+            font-size:3rem;
+            width:100%;} 
+
+        h2.titulo{
+                font-size: 2rem;
+                width:100%;}
+
+/*------------------------
+          MENNU
+------------------------*/
+
+       .navegacion {
         background-color:saddlebrown;} 
         
         .menuNav {
@@ -26,40 +46,16 @@
         .navbar-toggler { /*Esto modifica al botón*/
             border:none;
             margin:0px;
-            padding:0px;
-        }
-        
-        .navbar-toggler:focus { 
-            box-shadow: none;
-        }
+            padding:0px;}
+    
         
         .navbar-toggler { /*Esto modifica al botón*/
             width: 7%;
-            padding: 0px;
-        }
+            padding: 0px;}
         
         .icono img {
-            width: 120%;
-        }
+            width: 100%;}
 
-/*-----------------------------------------
-                  MAIN
------------------------------------------*/
-/*-----------------------
-          TITULO 
-------------------------*/
-        
-    header h1{
-         font-size: 3.5rem;
-    }
-    
-/*------------------------
-    TITULO EN OTRAS PAG
--------------------------*/
-    
-    h2.titulo{
-        font-size: 2rem;}
-    
 /*------------------------
            BODY
 -------------------------*/
@@ -72,22 +68,31 @@
         margin-bottom:150px;}
     
     .contenedorInfo{ 
-        margin-bottom:20px;
+        margin-bottom:70px;
         width:60%;
         
             h3 {
-               font-size: 2.5rem;}
+               font-size: 2rem;}
     
-            article p{
-                margin-top:10px;
-                margin-bottom:0px;
+            div p{
+                margin-top:30px;
+                margin-bottom:10px;
                 font-family: 'Julius Sans One', sans-serif;
-                text-align: center;}
+                text-align: center;
+                font-size: 0.8rem;}
       }
     
       .contenedorInfo2{ 
         margin-bottom:50px;
-        width:60%;}
+        width:60%;
+        
+        div p{
+            margin-top:30px;
+            margin-bottom:0px;
+            font-family: 'Julius Sans One', sans-serif;
+            text-align: center;
+            font-size: 0.8rem;}
+        }
     
     .contenedor{
        width:100%;
@@ -111,18 +116,16 @@
     .menuNav .itemsIzquierda {
         flex-direction: column;}
     
-    .contenedorInfo 
-    
 /*----------------------------
 FOTO CANCHA CUBIERTA MAIN BODY
 ------------------------------*/
         
     #canchasCub{
-        @include fotos-flex;
+        
         width:60%;
-        margin:50px 30px 50px 40px;
+        margin:50px 30px 100px 40px;
     
-        img .card-img-top {
+        img{
            width: 100%;}
 
            p {
@@ -134,9 +137,9 @@ FOTO CANCHAS DE POLVO DEL MAIN BODY
 ----------------------------------*/
     
         #canchasPolvo{
-             @include fotos-flex;
-             width:45%;
-             margin:60px 40px 60px 50px;
+            
+             width:60%;
+             margin:100px 40px 70px 50px;
     
              img{
                 width:100%;}
@@ -152,8 +155,8 @@ FOTO IMAGEN PROFESOR DEL MAIN BODY
     
         #profesoresExp{
             @include fotos-flex;
-            width:45%;
-            margin:70px 60px 40px 70px;
+            width:55%;
+            margin:100px 60px 70px 70px;
         
             img {
                 width: 100%;
@@ -170,8 +173,8 @@ FOTO ESCUELITA DEL MAIN BODY
     
         #escuelaTenis{
             @include fotos-flex;
-            width:45%;
-            margin:10px 20px 0px 40px;
+            width:50%;
+            margin:50px 20px 0px 40px;
         
             img {
                 width: 100%;}
@@ -256,18 +259,22 @@ FOTO ESCUELITA DEL MAIN BODY
             .img-fluid{
                 width:25%;
                 margin-bottom:20px;}
+
+            .card-text-mision{
+                width:100%;
+                margin-right:20px;}
     
             ol{
-                width:80%;
-                margin-left:40px;
+                width:100%;
+                margin-left:0px;
+                margin-right:40px;
     
                 li{
                     font-size: 0.8rem;
                     font-weight: 600;
                     color:darkblue}
             }
-    
-        }
+    }
     
         .card-valores{
             margin-bottom:5px;
@@ -277,13 +284,16 @@ FOTO ESCUELITA DEL MAIN BODY
                 width:50%;
                 margin-top:0px;
                 margin-left:40px;}
+
+                .card-text-valores{
+                    width:100%;
+                    margin-right:40px;}
     
-            ul{
+             ul{
                 display:flex;
                 flex-direction: column;
-                width:95%;
+                width:100%;
                 margin-left:20px;
-                ;
     
                 li{
                     font-size: 0.8rem;
@@ -391,7 +401,7 @@ FOTO ESCUELITA DEL MAIN BODY
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center; 
-                margin-left:30px;
+                margin-left:0px;
                 margin-top:10px;
                 width:90%;
             
@@ -410,12 +420,19 @@ FOTO ESCUELITA DEL MAIN BODY
                          font-weight: 600;
                          font-size: 1rem;
                          margin-bottom:0px;
-                         padding-left:10px;}
+                         padding-left:0px;}
             }
 
-            .row-profes{  
+        .containerQuerie{ 
+                width:100%;
                 margin-left:0px;
-                margin-bottom:0px;}
+            
+
+                .row-profes{  
+                    margin-left:20px;
+                    margin-right:20px;
+                    margin-bottom:0px;}
+        }
           
             .col-sm-12{
                 display:flex;
@@ -438,7 +455,7 @@ FOTO ESCUELITA DEL MAIN BODY
                 p{
                      font-size:0.8rem;}
     
-                h2{
+                h5{
                      font-size: 1.5rem;
                      color:yellow;}
              

@@ -11,16 +11,13 @@
           TITULO 
  ------------------------*/
     
-header h1{
-     font-size: 4rem;
-}
-
-/*------------------------
-   TITULO EN OTRAS PAG
--------------------------*/
+h1.titulo-querie{
+    font-size:3rem;
+    width:100%;} 
 
 h2.titulo{
-    font-size: 2rem;}
+        font-size: 2rem;
+        width:100%;}
 
 /*------------------------
            BODY
@@ -29,12 +26,19 @@ h2.titulo{
 #cuerpo-main {
     display: block;}
 
+.contenedor{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:0px;}
+
 #contenedorMain{
     margin-top:30px;
     margin-bottom:150px;}
 
 .contenedorInfo{ 
-    margin-bottom:40px;
+    margin-bottom:80px;
     width:60%;
     
         h3 {
@@ -48,67 +52,53 @@ h2.titulo{
   }
 
   .contenedorInfo2{ 
-    margin-bottom:80px;
+    margin-bottom:70px;
     width:60%;}
 
-.contenedor{
-   width:100%;
-   display:flex;
-   flex-direction: column;
-   justify-content: space-evenly;}
+
 
 .seccion1:first-child {
    order: 2;}
     
 .seccion2:nth-child(2) {
-   order: 1;}
+   order: 1;}    
 
-.contenedor{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin:0px;}
-    
 .menuNav .itemsIzquierda {
     flex-direction: column;}
-
-.contenedorInfo 
 
 /*----------------------------
 FOTO CANCHA CUBIERTA MAIN BODY
 ------------------------------*/
     
 #canchasCub{
-    @include fotos-flex;
-    width:60%;
-    margin:50px 30px 50px 40px;
+    
+    width:50%;
+    margin:10px 30px 80px 40px;
 
-    img .card-img-top {
+    img{
        width: 100%;}
+}
 
-    }
 /*---------------------------------
 FOTO CANCHAS DE POLVO DEL MAIN BODY
 ----------------------------------*/
 
-    #canchasPolvo{
-         @include fotos-flex;
-         width:150%;
-         margin:15px 60px 5px 70px;
+#canchasPolvo{
+       width:52%;
+       margin:80px 60px 80px 70px;
 
-         img{
-            width:100%;}
-
-    }
+       img{
+          width:100%;}
+}
 
 /*--------------------------------
 FOTO IMAGEN PROFESOR DEL MAIN BODY
 ---------------------------------*/
 
     #profesoresExp{
-        @include fotos-flex;
+        
         width:50%;
+        margin:80px 70px 60px 70px;
     
         img {
             width: 100%;
@@ -121,9 +111,8 @@ FOTO ESCUELITA DEL MAIN BODY
 ----------------------------*/
 
     #escuelaTenis{
-        @include fotos-flex;
         width:50%;
-        margin:30px 10px 0px 20px;
+        margin:10px 10px 0px 30px;
     
         img {
             width: 100%;}
@@ -212,8 +201,7 @@ FOTO ESCUELITA DEL MAIN BODY
                 font-weight: 600;
                 color:darkblue}
         }
-
-    }
+}
 
     .card-valores{
         margin-bottom:5px;
@@ -258,6 +246,7 @@ FOTO ESCUELITA DEL MAIN BODY
 
 div #contacto{
     width: 100%;
+    margin-right:30px;
     height:50vh;
     margin-top:100px; 
 
@@ -299,8 +288,6 @@ width:70%;}
             .text-querie{
             width:25em;}
     }
-
-    
 
     #botones-formulario{
         width:100%;}
@@ -362,7 +349,7 @@ width:70%;}
         .card{ 
              size: 100%;
              min-height:200px;
-             margin-bottom: 50px;
+             margin-bottom: 20px;
              width:15rem;
  
             .card-img-top{
