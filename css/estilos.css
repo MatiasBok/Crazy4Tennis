@@ -868,6 +868,12 @@ footer .texto-footer {
   margin: 20px;
 }
 
+footer .texto-footer div {
+  color: black;
+  font-size: 0.6rem;
+  font-weight: 1000;
+}
+
 footer .redes {
   display: -webkit-box;
   display: -ms-flexbox;
