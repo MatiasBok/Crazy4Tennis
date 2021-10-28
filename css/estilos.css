@@ -88,6 +88,7 @@ h2.titulo {
 #navbarNavDropdown {
   background-color: #e9731f;
   width: 100%;
+  opacity: 0.8;
 }
 
 .navegacion .menuNav .nav-link {
@@ -1675,6 +1676,26 @@ FOTO ESCUELITA DEL MAIN BODY
                     MEDIA SCREEN 576px
 ----------------------------------------------------------*/
 @media screen and (max-width: 576px) {
+  /*------------------------
+          MENNU
+------------------------*/
+  .navegacion {
+    background-color: chocolate;
+    height: 50px;
+  }
+  .menuNav .itemsIzquierda {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-toggler {
+    /*Esto modifica al botón*/
+    width: 7%;
+  }
+  .icono img {
+    width: 110%;
+  }
   /*-----------------------------------------
                     MAIN
  -----------------------------------------*/
@@ -1982,7 +2003,7 @@ FOTO ESCUELITA DEL MAIN BODY
     text-align: center;
   }
   .escribinos .text-querie {
-    width: 25em;
+    width: 100%;
   }
   #botones-formulario {
     width: 100%;
@@ -2161,37 +2182,21 @@ FOTO ESCUELITA DEL MAIN BODY
 ------------------------*/
   .navegacion {
     background-color: saddlebrown;
-  }
-  .menuNav {
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    height: 50px;
   }
   .menuNav .itemsIzquierda {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navegacion .menuNav .nav-link {
-    color: white;
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: bold;
-    font-size: 0.8rem;
-  }
-  .navbar-toggler {
-    /*Esto modifica al botón*/
-    border: none;
-    margin: 0px;
-    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .navbar-toggler {
     /*Esto modifica al botón*/
     width: 7%;
-    padding: 0px;
   }
   .icono img {
-    width: 100%;
+    width: 110%;
+    padding: 3px;
   }
   /*------------------------
            BODY
@@ -2553,7 +2558,7 @@ FOTO ESCUELITA DEL MAIN BODY
     text-align: center;
   }
   .escribinos .text-querie {
-    width: 25em;
+    width: 95%;
   }
   #botones-formulario {
     width: 100%;

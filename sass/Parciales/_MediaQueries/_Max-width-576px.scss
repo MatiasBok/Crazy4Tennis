@@ -4,6 +4,24 @@
 
 @media screen and (max-width: 576px) {
 
+/*------------------------
+          MENNU
+------------------------*/
+
+.navegacion {
+    background-color:chocolate; 
+    height: 50px;} 
+
+    .menuNav .itemsIzquierda {
+        flex-direction: column;}
+
+    .navbar-toggler { /*Esto modifica al botón*/
+        width: 7%;
+        } 
+    
+    .icono img {
+        width: 110%;}
+
 /*-----------------------------------------
                     MAIN
  -----------------------------------------*/
@@ -286,7 +304,7 @@ width:70%;}
                 text-align:center;}
                 
             .text-querie{
-            width:25em;}
+            width:100%;}
     }
 
     #botones-formulario{

@@ -25,36 +25,19 @@
 ------------------------*/
 
        .navegacion {
-        background-color:saddlebrown;} 
-        
-        .menuNav {
-            width:100%;
-            justify-content:space-between;
-        }
-        
-        .menuNav .itemsIzquierda{
-            display:flex;
-        }
-        
-        .navegacion .menuNav .nav-link { 
-            color:white;
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bold;
-            font-size: 0.8rem;
-        }
-
-        .navbar-toggler { /*Esto modifica al botón*/
-            border:none;
-            margin:0px;
-            padding:0px;}
+        background-color:saddlebrown; 
+        height: 50px;} 
     
-        
+        .menuNav .itemsIzquierda {
+            flex-direction: column;}
+    
         .navbar-toggler { /*Esto modifica al botón*/
             width: 7%;
-            padding: 0px;}
+            } 
         
         .icono img {
-            width: 100%;}
+            width: 110%;
+            padding: 3px;}
 
 /*------------------------
            BODY
@@ -363,7 +346,7 @@ FOTO ESCUELITA DEL MAIN BODY
                 text-align:center;}
                     
             .text-querie{
-                width:25em;}
+                width:95%;}
         }
     
         
