@@ -495,6 +495,7 @@ main h4 {
   text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
+  font-weight: 800;
 }
 
 .main-nosotros li {
@@ -545,7 +546,14 @@ main h4 {
   width: 100%;
 }
 
-.img-fluid {
+.card-VMV p {
+  margin: 0px;
+  margin-bottom: 5px;
+  color: orangered;
+  font-weight: 800;
+}
+
+.card-VMV .img-fluid {
   width: 100%;
 }
 
@@ -559,6 +567,11 @@ main h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card-vision p {
+  color: darkgreen;
+  font-weight: 600;
 }
 
 .card-vision .img-fluid {
@@ -581,6 +594,11 @@ main h4 {
   text-align: justify;
 }
 
+.card-mision li {
+  font-weight: 600;
+  color: darkblue;
+}
+
 .card-mision .img-fluid {
   width: 18%;
   margin-left: 50px;
@@ -598,6 +616,11 @@ main h4 {
           align-items: center;
   margin-bottom: 50px;
   text-align: justify;
+}
+
+.card-valores li {
+  font-weight: 600;
+  color: darkred;
 }
 
 .card-valores .img-fluid {
@@ -866,12 +889,6 @@ footer .texto-footer {
   font-weight: 1000;
   color: wheat;
   margin: 20px;
-}
-
-footer .texto-footer div {
-  color: black;
-  font-size: 0.6rem;
-  font-weight: 1000;
 }
 
 footer .redes {
@@ -2231,6 +2248,8 @@ FOTO ESCUELITA DEL MAIN BODY
   .contenedorInfo2 {
     margin-bottom: 50px;
     width: 60%;
+    margin-left: 10px;
+    margin-right: 20px;
   }
   .contenedorInfo2 div p {
     margin-top: 30px;
@@ -2620,15 +2639,13 @@ FOTO ESCUELITA DEL MAIN BODY
     width: 90%;
   }
   .mainQuerie .titulos-profes h3 {
-    font-size: 2.3rem;
-    width: 90%;
-    margin-left: 40px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 20px;
+    text-align: center;
   }
   .mainQuerie .titulos-profes h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 45%;
   }
   .mainQuerie .titulos-profes .profesQuerie {
