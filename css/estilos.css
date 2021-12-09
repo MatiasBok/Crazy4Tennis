@@ -651,25 +651,20 @@ main h4 {
 }
 
 .main-reservas section.reservas .titulo-reservas {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  width: 70%;
+  text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
   color: #c02600;
 }
 
-.main-reservas section.reservas .parrafo-reservas {
-  font-family: 'Lacquer', cursive;
-  text-align: justify;
-  color: orangered;
-  font-size: 1.3rem;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.main-reservas section.reservas .imagen-reservas {
-  width: 80%;
-  margin-top: 30px;
-  margin-bottom: 40px;
+.main-reservas section.reservas div.container {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: -50px 0px 60px 80px;
 }
 
 /*----------------------------------------------------
@@ -809,6 +804,111 @@ main h4 {
           transform: scale(1.8);
   -webkit-transition: 1.5s;
   transition: 1.5s;
+}
+
+/*----------------------------------------------------
+                    INGRESAR
+-----------------------------------------------------*/
+main .tituloIngreso {
+  font-size: 2.5rem;
+  color: orangered;
+  width: 70%;
+  text-align: center;
+  margin: 30px 10px 10px 200px;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 900px;
+  height: 610px;
+  margin-top: -80px;
+  margin-bottom: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+main .container .tituloFormulario {
+  background-color: #FEFFED;
+  padding: 20px 35px;
+  margin: -10px -50px 10px -50px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+div.formIng {
+  width: 300px;
+  padding: 10px 50px 25px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: Julius Sans One;
+  float: left;
+  margin-top: 50px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  color: #4f4f4f;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+label {
+  color: #464646;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+center {
+  font-size: 32px;
+}
+
+.valid {
+  color: green;
+}
+
+.back {
+  text-decoration: none;
+  border: 1px solid #008fff;
+  background-color: #a01794;
+  padding: 3px 20px;
+  border-radius: 2px;
+  color: black;
+}
+
+input[type=button] {
+  font-size: 16px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffbc00), to(#ffdd7f));
+  background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+  border: 1px solid #e5a900;
+  color: #4E4D4B;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline: none;
+}
+
+input[type=button]:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffdd7f), to(#ffbc00));
+  background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 }
 
 /*----------------------------------------------------
