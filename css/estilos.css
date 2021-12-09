@@ -464,6 +464,10 @@ main h4 {
           align-items: center;
 }
 
+.row-profes .card .card-body p {
+  text-align: center;
+}
+
 /*----------------------------------------------------
                     NOSOTROS
 -----------------------------------------------------*/
@@ -817,7 +821,7 @@ main .tituloIngreso {
   margin: 30px 10px 10px 200px;
 }
 
-main .container {
+main .contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,7 +842,7 @@ main .container {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-main .container .tituloFormulario {
+main .contenedor .tituloFormulario {
   background-color: #FEFFED;
   padding: 20px 35px;
   margin: -10px -50px 10px -50px;
